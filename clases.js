@@ -4,6 +4,8 @@ class Usuario{
         this.apellido = apellido;
         this.libros = libros;
         this.mascotas = mascotas;
+        // this.cuentalibros= cuentalibros;
+        // this.cuentamascotas= cuentamascotas
     }
 
     static cuentaGlobal = 0;
@@ -13,7 +15,8 @@ class Usuario{
     }
 
     addMascotas (){
-        return this.mascotas;
+        return this.mascotas++;
+        Usuario
     }
 
     countMascotas (){
@@ -22,17 +25,17 @@ class Usuario{
 
     addBook(){
         this.libros++;
-        
+
     }
-    getBookNames(){
-        this.cuentaIndividual++;
-    }
+    // getBookNames(){
+    //     this.libro(nombre);
+
+    // }
 }
 
-const usuarioNahuel = new Usuario ("Nahuel","Retegui",[{nombre:'1984',autor:'George Orwell'},{nombre:'La naranja mecanica',autor:'Anthony Burgess'}],['gato','jabali']);
+const usuarioNahuel = new Usuario ("Nahuel","Retegui",[{"1984":"George Orwell"},{"La naranja mecanica":"Anthony Burgess"}],['gato','jabali']);
 
 console.log(usuarioNahuel);
 console.log(usuarioNahuel.getFullName());
-// console.log('Nahuel: ', usuarioNahuel.countMascotas());
-// console.log('Nahuel: ',usuarioNahuel.addBook());
-// console.log('Nahuel: ',usuarioNahuel.getBookNames());
+// console.log(usuarioNahuel.countMascotas());
+// console.log(usuarioNahuel.getBookNames());
