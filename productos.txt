@@ -1,7 +1,7 @@
 [
     
 {
-    id: 1
+    id: 1,
     nombre: "Super Mario 64",
     consola: "Nintendo 64",
     empresa: "Nintendo",
@@ -12,7 +12,7 @@
 },
 
 {
-    id: 2
+    id: 2,
     nombre: "Pokemon Ruby",
     consola: "Gameboy Advance",
     empresa: "Nintendo",
@@ -24,7 +24,7 @@
 }
 
  {    
-    id: 3  
+    id: 3,
     nombre: "Parasite Eve II",
     consola: "Playstation 1",
     empresa: "Playstation",
