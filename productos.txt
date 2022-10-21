@@ -1,0 +1,38 @@
+[
+    
+{
+    id: 1
+    nombre: "Super Mario 64",
+    consola: "Nintendo 64",
+    empresa: "Nintendo",
+    desc: "Super Mario 64 is a 1996 platform game for the Nintendo 64. Developed by Nintendo Entertainment Analysis and Development and published by Nintendo, it is the first Super Mario game to feature 3D gameplay, combining traditional Super Mario gameplay, visual style, and characters in a large open world. ",
+    precio: 6.175,
+    img: 'https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg',
+    cantidad:5
+},
+
+{
+    id: 2
+    nombre: "Pokemon Ruby",
+    consola: "Gameboy Advance",
+    empresa: "Nintendo",
+    desc: "Suelto",
+    desc: "Pokémon Ruby Version and Pokémon Sapphire Version are 2002 role-playing video games developed by Game Freak, published by The Pokémon Company and Nintendo for the Game Boy Advance. They are the first installments in the third generation of the Pokémon video game series, also known as the advanced generation",
+    precio: 8614,
+    img: 'https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg',
+    cantidad:6
+}
+
+ {    
+    id: 3  
+    nombre: "Parasite Eve II",
+    consola: "Playstation 1",
+    empresa: "Playstation",
+    desc: "En caja sin manual",
+    desc: "Parasite Eve II is an action role-playing survival horror video game released for the PlayStation. The game was developed by Square, published in Japan in 1999 and in both North America and, unlike the previous game, in PAL regions in 2000.",
+    precio: 10090,
+    img: 'https://www.picclickimg.com/MVEAAOSw~otibrB2/Parasite-Eve-2-II-US-NTSC-PS1.jpg',
+    cantidad:4
+    }
+        
+        ]

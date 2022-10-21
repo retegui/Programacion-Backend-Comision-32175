@@ -27,10 +27,10 @@ class Usuario{
         this.libros++;
 
     }
-    // getBookNames(){
-    //     this.libro(nombre);
+    getBookNames(){
+        this.libro(nombre);
 
-    // }
+    }
 }
 
 const usuarioNahuel = new Usuario ("Nahuel","Retegui",[{"1984":"George Orwell"},{"La naranja mecanica":"Anthony Burgess"}],['gato','jabali']);
