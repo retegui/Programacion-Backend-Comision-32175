@@ -1,13 +1,110 @@
 [
-    {
-    "id": 1,
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 1
+  },
+  {
     "nombre": "Super Mario 64",
-    "consola": "Nintendo 64",
-    "empresa": "Nintendo",
-    "desc": "Super Mario 64 is a 1996 platform game for the Nintendo 64. Developed by Nintendo Entertainment Analysis and Development and published by Nintendo, it is the first Super Mario game to feature 3D gameplay, combining traditional Super Mario gameplay, visual style, and characters in a large open world.",
-    "precio": 6.175,
+    "precio": 6175,
     "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
-    "cantidad":5
-}
-
+    "id": 2
+  },
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 3
+  },
+  {
+    "nombre": "Super Mario 64",
+    "precio": 6175,
+    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "id": 4
+  },
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 5
+  },
+  {
+    "nombre": "Super Mario 64",
+    "precio": 6175,
+    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "id": 6
+  },
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 7
+  },
+  {
+    "nombre": "Super Mario 64",
+    "precio": 6175,
+    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "id": 8
+  },
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 9
+  },
+  {
+    "nombre": "Super Mario 64",
+    "precio": 6175,
+    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "id": 10
+  },
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 11
+  },
+  {
+    "nombre": "Super Mario 64",
+    "precio": 6175,
+    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "id": 12
+  },
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 13
+  },
+  {
+    "nombre": "Super Mario 64",
+    "precio": 6175,
+    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "id": 14
+  },
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 15
+  },
+  {
+    "nombre": "Super Mario 64",
+    "precio": 6175,
+    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "id": 16
+  },
+  {
+    "nombre": "Pokemon Ruby",
+    "precio": 8614,
+    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "id": 17
+  },
+  {
+    "nombre": "Super Mario 64",
+    "precio": 6175,
+    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "id": 18
+  }
 ]
