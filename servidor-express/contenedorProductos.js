@@ -44,9 +44,7 @@ class Contenedor{
 
    async getById(id){
     try {
-        //obtener todos los productos.
         const productos = await this.getAll();
-        //buscar nuestro producto por el id
         const producto = productos.find(elemento=>elemento.id === id);
         return producto;
     } catch (error) {
