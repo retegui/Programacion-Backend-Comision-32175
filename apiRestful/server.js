@@ -60,7 +60,60 @@ routerProductos.get('/productos/:id/', (req, res) =>{
             producto
         })
     }})
+routerProductos.get('/productos/:id/', (req, res) =>{
+    const id = req.params.id-1;
+    const producto = productos[id];
+    
+    if(isNaN(id)){
+        res.json({
+            error: 'El parámetro no es un número.'
+        })
+    }else{
+        producto == undefined
+        ? res.status(500).json({
+            error: 'No existe el producto'
+        })
+        : res.json({
+            producto
+        })
+    }})
 
+routerProductos.put('/productos/:id/', (req, res) =>{
+    const id = req.params.id-1;
+    const producto = productos[id];
+    
+    if(isNaN(id)){
+        res.json({
+            error: 'El parámetro no es un número.'
+        })
+    }else{
+        producto == undefined
+        ? res.status(500).json({
+            error: 'No existe el producto'
+        })
+        : res.json({
+            producto
+        })
+    }})
+
+routerProductos.delete('/productos/:id/', (req, res) =>{
+    const id = req.params.id-1;
+    const producto = productos[id];
+    
+    if(isNaN(id)){
+        res.json({
+            error: 'El parámetro no es un número.'
+        })
+    }else{
+        producto == undefined
+        ? res.status(500).json({
+            error: 'No existe el producto'
+        })
+        : res.json({
+            producto
+        })
+    }})
+    
 
 })
 
