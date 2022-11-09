@@ -44,19 +44,22 @@ routerProductos.post('/productos/',(req,res)=>{
     })
 
 routerProductos.get('/productos/:id/', (req, res) =>{
-    let id = req.body;
-    try {
-        const producto = productos.find(elemento=>elemento.id === id);
-        return producto;
-    } catch (error) {
-        return "El producto no se encuentra";
-    }
+    const id = req.params.id-1;
+    const producto = productos[id];
     
-    res.json({
-        
-        producto
-    })
-    })
+    if(isNaN(id)){
+        res.json({
+            error: 'El parámetro no es un número.'
+        })
+    }else{
+        producto == undefined
+        ? res.status(500).json({
+            error: 'No existe el producto'
+        })
+        : res.json({
+            producto
+        })
+    }})
 
 
 })
