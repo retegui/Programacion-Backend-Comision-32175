@@ -49,5 +49,5 @@ app.post("/products",async(req,res)=>{
 
     await productsService.save(newProduct);
 
-    res.redirect("/");
+    res.redirect("/productos");
 })
