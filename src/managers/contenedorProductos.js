@@ -70,24 +70,6 @@ getName(){
 }
 }
 
-// const producto1={
-//       nombre: "Pokemon Ruby", 
-//       precio: 8614,
-//       img: "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg"
-           
-//     }
-  
-
-// const producto2={        
-   
-//         nombre: "Super Mario 64",
-//         precio: 6175,
-//         img: "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg"
-        
-//     }
-   
-
-
 const manejadorProductos = new Contenedor ("productos.txt");
 console.log(manejadorProductos);
 const getData = async()=>{
