@@ -28,5 +28,11 @@
     "price": "10202",
     "thumbnail": "dsfsdfdsfsdfsd",
     "id": 5
+  },
+  {
+    "title": "pepe",
+    "price": "5454",
+    "thumbnail": "pepe.jpg",
+    "id": 6
   }
 ]

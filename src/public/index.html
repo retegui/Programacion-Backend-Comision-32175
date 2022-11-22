@@ -9,6 +9,17 @@
 <body>
     Pagina chat
     <p id="username"></p>
+
+    <form method="post" action="/products">
+        <label>Titulo</label>
+        <input name="title"/>
+        <label>Precio</label>
+        <input name="price"/>
+        <label>Imagen</label>
+        <input name="thumbnail"/>
+        <button type="submit">Guardar</button>
+    </form>
+    
     <form id="chatForm">
         <input type="text" id="messageChat"/>
         <button type="submit">Enviar</button>
