@@ -1,4 +1,4 @@
-console.log("js funcionando");
+console.log("JS funcionando");
 
 const socketClient = io();
 
@@ -8,7 +8,7 @@ socketClient.on("messagesChat",(data)=>{
     console.log(data)
     let messages="";
     data.forEach(element => {
-        messages += `<p>Autor: ${element.author} - mensage: ${element.text}</p>`
+        messages += `<p>Autor: ${element.author} - Mensaje: ${element.text}</p>`
     });
     chatContainer.innerHTML = messages;
 })

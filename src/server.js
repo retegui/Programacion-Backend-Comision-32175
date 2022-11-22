@@ -4,24 +4,27 @@ const path = require("path");
 const {Server} = require("socket.io");
 const app = express();
 
+//PUERTO//
 const PORT = process.env.PORT || 8080;
 
+//PRODUCTOS//
 const Contenedor = require("./managers/contenedorProductos");
 const productsService = new Contenedor("productos.txt");
-const viewsFolder = path.join(__dirname,"views")
 
-
+//Servidor Express//
 const server = app.listen(PORT, ()=>console.log(`Servidor escuchando el puerto ${PORT}`));
 
 app.use(express.static(__dirname+"/public"));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-
+//Handlebars//
+const viewsFolder = path.join(__dirname,"views")
 app.engine("handlebars",handlebars.engine());
 app.set("views", viewsFolder);
 app.set("view engine", "handlebars");
 
+//Webocket//
 const io = new Server(server);
 
 const messages = [
@@ -32,13 +35,7 @@ const messages = [
 
 io.on("connection", (socket)=>{
     console.log("Un nuevo cliente se ha conectado");
-    // socket.emit("productsArray", await productsService.getAll());
-
-    // socket.on("newProduct", async(data)=>{
-    //     await productsService.save(data);
-
-    //     io.sockets.emit("productsArray", await productsService.getAll());
-    // })
+    socket.emit("messagesChat", messages);
 })
 
 app.get("/",(req,res)=>{
@@ -52,10 +49,6 @@ app.get("/productos", async(req,res)=>{
         productos:productos
     })
 })
-
-
-
-
 
 app.post("/products",async(req,res)=>{
 
