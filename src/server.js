@@ -1,3 +1,4 @@
+const { privateDecrypt } = require('crypto');
 const express = require('express');
 const handlebars = require("express-handlebars");
 const path = require("path");
@@ -41,6 +42,11 @@ io.on("connection", (socket)=>{
         messages.push(data);
         io.sockets.emit("messagesChat",messages);
     })
+    socket.compress("newProduct",async (data)=>{
+        await productsService.save(data);
+        const productos = await productsService.getAll();
+        io.sockets.emit("productsArray",productos);
+    })
 })
 
 
@@ -64,5 +70,5 @@ app.post("/products",async(req,res)=>{
 
     await productsService.save(newProduct);
 
-    res.redirect("/productos");
+    res.redirect("/");
 })

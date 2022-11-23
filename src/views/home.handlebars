@@ -1,19 +1,21 @@
 <div class="contenedor">
     <h2>Pagina home</h2>
-    <form method="post" action="/products">
+    <form id="productForm">
         <label>Titulo</label>
-        <input name="title"/>
+        <input name="title" id="title"/>
         <label>Precio</label>
-        <input name="price"/>
+        <input name="price" id="price"/>
         <label>Imagen</label>
-        <input name="thumbnail"/>
+        <input name="thumbnail" id="thumbnail"/>
         <button type="submit">Guardar</button>
     </form>
 </div>
 
 <div id="productsContainer">
-{{ productos}}
+{{ contenedorProductos}}
 </div>
+
+
 <div id="chatContainer">
     </div>
     

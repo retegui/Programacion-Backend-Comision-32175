@@ -40,3 +40,21 @@ chatForm.addEventListener("submit",(event)=>{
 
     socketClient.emit("newMsg", message)
 })
+
+const productForm = document.getElementById("productForm");
+productForm.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    const product = {
+        title: document.getElementById("title").value,
+        price: document.getElementById("price").value,
+        thumbnail: document.getElementById("thumnail").value,
+        
+    }
+    console.log("product",product)
+    socketClient.emit("newProduct",product);
+})
+
+socketClient.on("productsArray",(data)=>{
+    console.log(data)
+}
+)
