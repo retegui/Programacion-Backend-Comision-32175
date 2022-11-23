@@ -11,20 +11,21 @@ const PORT = process.env.PORT || 8080;
 const Contenedor = require("./managers/contenedorProductos");
 const productsService = new Contenedor("productos.txt");
 
-//Servidor Express//
+//SERVIDOR EXPRESS//
 const server = app.listen(PORT, ()=>console.log(`Servidor escuchando el puerto ${PORT}`));
 
+//MIDDLEWARES//
 app.use(express.static(__dirname+"/public"));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-//Handlebars//
+//HANDLEBARS//
 const viewsFolder = path.join(__dirname,"views")
 app.engine("handlebars",handlebars.engine());
 app.set("views", viewsFolder);
 app.set("view engine", "handlebars");
 
-//Webocket//
+//WEBSOCKETS//
 const io = new Server(server);
 
 const messages = [
@@ -42,13 +43,16 @@ io.on("connection", (socket)=>{
     })
 })
 
+
+//RUTAS//
+
 app.get("/",(req,res)=>{
     res.render("home")
 })
 
 app.get("/productos", async(req,res)=>{
     const productos = await productsService.getAll();
-    console.log(productos)
+    // console.log(productos)
     res.render("productos", {
         productos:productos
     })
