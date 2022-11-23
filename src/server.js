@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8080;
 
 //PRODUCTOS//
 const Contenedor = require("./managers/contenedorProductos");
-const productsService = new Contenedor("productos.txt");
+const productsService = new Contenedor("./files/productos.txt");
 
 //SERVIDOR EXPRESS//
 const server = app.listen(PORT, ()=>console.log(`Servidor escuchando el puerto ${PORT}`));

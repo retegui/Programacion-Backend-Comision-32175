@@ -70,7 +70,7 @@ getName(){
 }
 }
 
-const manejadorProductos = new Contenedor ("productos.txt");
+const manejadorProductos = new Contenedor ("./files/productos.txt");
 console.log(manejadorProductos);
 const getData = async()=>{
         // const productos = await manejadorProductos.getAll();

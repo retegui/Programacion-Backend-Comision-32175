@@ -1,14 +1,14 @@
 [
   {
-    "nombre": "Pokemon Ruby",
-    "precio": 8614,
-    "img": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
+    "title": "Pokemon Ruby",
+    "price": 8614,
+    "thumbnail": "https://i.ebayimg.com/images/g/c1kAAOSwzwZgzAS4/s-l1600.jpg",
     "id": 1
   },
   {
-    "nombre": "Super Mario 64",
-    "precio": 6175,
-    "img": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
+    "title": "Super Mario 64",
+    "price": 6175,
+    "thumbnail": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
     "id": 2
   }
 ]
