@@ -47,8 +47,7 @@ productForm.addEventListener("submit", (event)=>{
     const product = {
         title: document.getElementById("title").value,
         price: document.getElementById("price").value,
-        thumbnail: document.getElementById("thumnail").value,
-        
+        thumbnail: document.getElementById("thumbnail").value,
     }
     console.log("product",product)
     socketClient.emit("newProduct",product);
