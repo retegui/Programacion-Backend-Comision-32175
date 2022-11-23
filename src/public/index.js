@@ -23,7 +23,7 @@ Swal.fire({
 }).then(response=>{
     console.log(response)
     user = response.value;
-    document.getElementById("username").innerHTML = `Bienvenido ${user}`;
+    document.getElementById("username").innerHTML = `¡Bienvenido ${user}!`;
 })
 
 

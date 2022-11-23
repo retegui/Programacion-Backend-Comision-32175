@@ -36,6 +36,10 @@ const messages = [
 io.on("connection", (socket)=>{
     console.log("Un nuevo cliente se ha conectado");
     socket.emit("messagesChat", messages);
+    socket.on("newMsg", (data)=>{
+        messages.push(data);
+        io.sockets.emit("messagesChat",messages);
+    })
 })
 
 app.get("/",(req,res)=>{
