@@ -10,5 +10,11 @@
     "price": 6175,
     "thumbnail": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
     "id": 2
+  },
+  {
+    "title": "Super Mario 64",
+    "price": "1000",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/6a/Super_Mario_64_box_cover.jpg",
+    "id": 3
   }
 ]

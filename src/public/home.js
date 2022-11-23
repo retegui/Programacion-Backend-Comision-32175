@@ -57,7 +57,8 @@ const productsContainer = document.getElementById("productsContainer");
 socketClient.on("productsArray", async (data)=>{
     console.log(data)
     const templateTable = await fetch("./templates/table.handlebars");
-    const template = await templateTable.text();
-    console.log(template)
-}
-)
+    const templateFormat = await templateTable.text();
+    const template = Handlebars.compile(templateFormat);
+    const html = template({products:data});
+    productsContainer.innerHTML = html;   
+})
