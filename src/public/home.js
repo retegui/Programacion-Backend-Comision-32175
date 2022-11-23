@@ -53,7 +53,11 @@ productForm.addEventListener("submit", (event)=>{
     socketClient.emit("newProduct",product);
 })
 
-socketClient.on("productsArray",(data)=>{
+const productsContainer = document.getElementById("productsContainer");
+socketClient.on("productsArray", async (data)=>{
     console.log(data)
+    const templateTable = await fetch("./templates/table.handlebars");
+    const template = await templateTable.text();
+    console.log(template)
 }
 )

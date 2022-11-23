@@ -35,17 +35,17 @@ const messages = [
     { author: "Eva", text: "Increible" }
 ];
 
-io.on("connection", (socket)=>{
+io.on("connection", async (socket)=>{
     console.log("Un nuevo cliente se ha conectado");
+    socket.emit("productsArray",await productsService.getAll());
     socket.emit("messagesChat", messages);
     socket.on("newMsg", (data)=>{
         messages.push(data);
         io.sockets.emit("messagesChat",messages);
     })
-    socket.compress("newProduct",async (data)=>{
-        await productsService.save(data);
-        const productos = await productsService.getAll();
-        io.sockets.emit("productsArray",productos);
+    socket.on("newProduct",async (data)=>{
+        await productsService.save(data);      
+        io.sockets.emit("productsArray",await productsService.getAll());
     })
 })
 

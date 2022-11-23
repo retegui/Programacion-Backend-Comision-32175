@@ -1,4 +1,4 @@
-{{#if products}}
+{{#if products.length>0}}
     <table>
         <thead>
             <th>Titulo</th>
@@ -8,9 +8,9 @@
         <tbody>
             {{#each products}}
                 <tr>
-                    <td>{{this.titulo}}</td>
-                    <td>{{this.precio}}</td>
-                    <td><img width="100px" src="{{this.imagen}}"/></td>
+                    <td>{{this.title}}</td>
+                    <td>{{this.price}}</td>
+                    <td><img width="100px" src="{{this.thumbnail}}"/></td>
                 </tr>
             {{/each}}
         </tbody>

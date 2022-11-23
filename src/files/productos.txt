@@ -10,35 +10,5 @@
     "price": 6175,
     "thumbnail": "https://i.ebayimg.com/images/g/4AMAAOSwf9JhIhMv/s-l640.jpg",
     "id": 2
-  },
-  {
-    "title": "Super Mario 64",
-    "price": "5000",
-    "thumbnail": "https://www.google.com.ar/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSuper_Mario_64&psig=AOvVaw2CLpFxbxfaDg7Lv43gBWgv&ust=1669260054480000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIj3x7esw_sCFQAAAAAdAAAAABAD",
-    "id": 3
-  },
-  {
-    "title": "Super Mario 64",
-    "price": "5600",
-    "thumbnail": "https://www.google.com.ar/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSuper_Mario_64&psig=AOvVaw2CLpFxbxfaDg7Lv43gBWgv&ust=1669260054480000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIj3x7esw_sCFQAAAAAdAAAAABAD",
-    "id": 4
-  },
-  {
-    "title": "Super Mario 64",
-    "price": "2000",
-    "thumbnail": "https://www.google.com.ar/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSuper_Mario_64&psig=AOvVaw2CLpFxbxfaDg7Lv43gBWgv&ust=1669260054480000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIj3x7esw_sCFQAAAAAdAAAAABAD",
-    "id": 5
-  },
-  {
-    "title": "aeaea",
-    "price": "10202",
-    "thumbnail": "https://m.media-amazon.com/images/I/614hBOHd3bL.jpg",
-    "id": 6
-  },
-  {
-    "title": "Super MAario 64",
-    "price": "6565",
-    "thumbnail": "https://www.google.com.ar/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSuper_Mario_64&psig=AOvVaw2CLpFxbxfaDg7Lv43gBWgv&ust=1669260054480000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIj3x7esw_sCFQAAAAAdAAAAABAD",
-    "id": 7
   }
 ]
